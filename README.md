@@ -5,6 +5,7 @@ You can run with following command (10 samples with rendering)
 `python monty_hall_machine.py --test_num 10 --render`
 
 Output
+```bash
  ______  ______  ______
 |      ||      ||      |
 |      || W 1  ||      |
@@ -56,3 +57,4 @@ Output
 |      ||      ||      |
  ------  ------  ------
 Stick win ratio: 30.0%, Switch win ratio: 70.0%
+```
