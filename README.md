@@ -1,7 +1,7 @@
 # Monty-hall-problem-tester
 Does counter intuitive Monty Hall problem even true???
 
-You can run with following command (10 samples with rendering)
+You can run with following command (10 samples with rendering)\\
 `python monty_hall_machine.py --test_num 10 --render`
 
 Output
