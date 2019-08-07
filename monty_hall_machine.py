@@ -1,4 +1,12 @@
 import numpy as np
+import argparse
+
+parser = argparse.ArgumentParser(description='monty parameters')
+parser.add_argument('--test_num', type=int, default=1,
+                    help='number of test sample')
+parser.add_argument('--render', action="store_true", default=False,
+                    help='render or not')
+args = parser.parse_args()
 
 class Doors():
     def __init__(self):
@@ -6,7 +14,8 @@ class Doors():
         self.win_idx = self.rand()
         self.env[self.win_idx] = 1
         self.first_choice_idx = self.rand()
-        self.render()
+        if args.render:
+            self.render()
         self.wrong_idx = self.tell_the_wrong_door()
         self.switch()
     
@@ -53,7 +62,7 @@ class Doors():
 test_num = 10
 stick_win_counter = 0
 switch_win_counter = 0
-for i in range(test_num):
+for i in range(args.test_num):
     doors = Doors()
     # print("win idx",doors.win_idx)
     # print("first choice",doors.first_choice_idx)
@@ -66,6 +75,6 @@ for i in range(test_num):
         switch_win_counter += 1
 
 print("Stick win ratio: {}%, Switch win ratio: {}%".format(
-    stick_win_counter/float(test_num)*100,
-    switch_win_counter/float(test_num)*100
+    stick_win_counter/float(args.test_num)*100,
+    switch_win_counter/float(args.test_num)*100
 ))
