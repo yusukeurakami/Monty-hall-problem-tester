@@ -147,7 +147,7 @@ Pattern2                      Pattern3
 
 
 Okay, at this point, how many door you can choose as a "2nd" choice if you "switch" rather than "stick" to the original choice?
-Yeah, there is only one 2nd choice you can make, to the winner.
+Yeah, there is only one 2nd choice you can make. Yes, to the winner.
 ```bash
 Pattern2                      Pattern3                 
  door1   door2   door3         door1   door2   door3   
@@ -158,7 +158,7 @@ Pattern2                      Pattern3
 |  /\  ||      || 2nd  |      |      ||  /\  || 2nd  |
 |_/__\_||______||______|      |______||_/__\_||______|
 ```
-As you see, in pattern2 and pattern3, you can win if you switch, and the probability to be in those pattern is 2/3.
+As you see, in pattern2 and pattern3, you can 100% win if you switch, and the probability that you will be in those pattern is 2/3.
 What if you switch the door in pattern1? You will miss the prize.
 
 ## You can describe this phenomemon in other way like this too.
